@@ -7,3 +7,13 @@ body {
   overflow-x: auto;
   flex-wrap: nowrap;
 }
+
+.img-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.img-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
