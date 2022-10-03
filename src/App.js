@@ -4,7 +4,7 @@ import MovieList from './components/MovieList';
 import "bootstrap/dist/css/bootstrap.min.css";
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox'; 
-
+import AddFavourites from './components/AddFavourites'; 
 
 const App = ()=>  {
   const [movies, setMovies] = useState([ ]);
@@ -32,7 +32,7 @@ useEffect(()=>{
         <SearchBox  searchValue = {searchValue} setSearchValue={setSearchValue}/>
       </div>
       <div className="row">
-      <MovieList movies = {movies} />
+      <MovieList movies = {movies} favouritieComponents={AddFavourites} />
       </div>
     </div>
     );
